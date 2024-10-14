@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+  .h{background-color:black;
+            display: inline-flexbox;
+            padding: 40px;
+            height: 40px;
+            
+        }
+        footer{
+            background-color:black;
+            color:white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 400px;
+
+        }
+      
+
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  text-align: justify;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  display:inline-flex;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+</style>
+</head>
+<body linear>
+  
+<div class="h" >
+
+       
+  <div class="3r" style="margin-right: 20px;"><a href="login.html"></div><button type="button" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+  </svg>Login</button></a>
+<!-- Example single danger button -->
+<div class="btn-group">
+<button type="button" class="btn btn-outline-danger dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+Dashboard
+</button>
+<ul class="dropdown-menu">
+<div><li><a class="dropdown-item"  href="ind.html"></div><button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+</svg>Home</button></a></li>
+<div><li><a class="dropdown-item" href="drop.html"></div><button type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>About</button></a></li>
+<div><li><a class="dropdown-item" href="contact.html"></div><button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>contact</button></a></li>
+<div ><li><a class="dropdown-item"href="grid.html"></div><button type="button" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>Profile</button></a><li></li>
+
+<li><hr class="dropdown-divider"></li>
+</ul>
+</div>     
+</div>
+  <div class="container">
+    <div class="text-center my-5">
+      <h1>Flower Pradise</h1>
+      <hr/>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+
+        <div class="card-mb-5 shadow-sm">
+          <img src="pexels-pixabay-39517.jpg"class="img-fluid"/>
+          <div class="card-body">
+            <div class="card-title">
+              <h2>Rose</h2>
+            </div>
+            <div class="card-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+              </p>
+            </div>
+            <a href="https://www.britannica.com/plant/rose-plant" class="btn-btn-outline-primary-rounderr-0 float-end">
+              Read more</a>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card-mb-5 shadow-sm">
+            <img src="pexels-nurseryart-371052.jpg"class="img-fluid"/>
+            <div class="card-body">
+              <div class="card-title">
+                <h2>Lavender hydrosol</h2>
+              </div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+                </p>
+              </div>
+              <a href="https://www.britannica.com/plant/lavender" class="btn-btn-outline-primary-rounderr-0 float-end">
+                Read more</a>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card-mb-5 shadow-sm">
+              <img src="pexels-mastercowley-1128797.jpg "class="img-fluid"/>
+              <div class="card-body">
+                <div class="card-title">
+                  <h2>Holy hay</h2>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+                  </p>
+                </div>
+                <a href="https://friendsoftherib.wordpress.com/2019/07/11/holy-hay/" class="btn-btn-outline-primary-rounderr-0 float-end">
+                  Read more</a>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card-mb-5 shadow-sm">
+                <img src="pexels-iriser-1408221.jpg"class="img-fluid"/>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2>Phlox</h2>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+                    </p>
+                  </div>
+                  <a href="https://www.britannica.com/plant/phlox" class="btn-btn-outline-primary-rounderr-0 float-end">
+                    Read more</a>
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-mb-5 shadow-sm">
+                  <img src="pexels-diego-madrigal-162471-696996.jpg"class="img-fluid"/>
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h2>Belladona Lily</h2>
+                    </div>
+                    <div class="card-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+                      </p>
+                    </div>
+                    <a href="https://www.britannica.com/plant/Amaryllidaceae" class="btn-btn-outline-primary-rounderr-0 float-end">
+                      Read more</a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+         
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card-mb-5 shadow-sm">
+                    <img src="pexels-brett-sayles-992734.jpg"class="img-fluid"/>
+                    <div class="card-body">
+                      <div class="card-title">
+                        <h2>cherry</h2>
+                      </div>
+                      <div class="card-text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente non iusto tempore, harum perferendis nam blanditiis fugiat corporis impedit maiores, in, voluptatem explicabo enim vero ad unde distinctio voluptates!
+                        </p>
+                      </div>
+                      <a href="https://www.britannica.com/plant/cherry" class="btn-btn-outline-primary-rounderr-0 float-end">
+                        Read more</a>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="text-center my-5">
+      
+    </div>
+    <div class="row">
+        <div class="col-md-4 "style="margin-top: 30px;">
+          <div class="col">
+            <h1>Stock Available</h1>
+            <hr>
+          </div>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">rose 10%</div>
+    </div>
+     <br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Lavender25%</div>
+    </div>
+    <br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-info  progress-bar-animated" role="progressbar " style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Holy Hay50%</div>
+    </div>
+    <br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-warning  progress-bar-animated" role="progressbar " style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">cherry75%</div>
+    </div>
+    <br>
+     <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-danger  progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Phlox100%</div>
+  </div>
+  
+        </div>
+        <div class="col-md-8"style="margin-top: 10px;">
+
+
+
+          <h1>About us</h1><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="notification">
+            <span>Inbox</span>
+            <span class="badge">6</span>
+          </a>
+          
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt reprehenderit quidem nostrum mollitia ratione aperiam debitis accusamus error, ab iste praesentium iure esse fugit sint rem nobis. Maxime, voluptas dolor minus sunt delectus suscipit aliquid autem, iste dignissimos officia exercitationem, quam sequi atque doloribus ipsam magnam neque quisquam corrupti reiciendis labore odit quasi non deserunt soluta. Unde saepe, neque nobis ut voluptatem culpa eius eos sunt pariatur recusandae quo deleniti at suscipit error quam dolor! Quibusdam voluptatum consectetur esse, hic sunt quas, neque, eaque porro quasi placeat quisquam accusantium eius velit in nostrum illum dolore temporibus veritatis a eos!
+          </p>
+        </div>
+      <hr></hr>
+       
+    </div>
+   
+</div>
+  <footer>
+    <a   href="contact.html" aria-placeholder="For contact">For contact </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        .container{
+            background-color: rgba(0,0,0,0.7);
+        
+            margin-top: 100px;
+            color:wheat;
+            border: solid;
+            border-width: 10px;
+            border-radius: 100px;
+            border-color: black;
+            border-style: groove;
+            height: 350px;
+            margin-right: 30%;
+            margin-left: 35%;
+            padding: 30px;
+
+        }
+        button:hover{
+            
+            border: 2px salmon;
+        }
+        
+
+    </style>
+</head>
+<body style="background-image:url(login.jpg)">
+    
+    <div class="img">
+
+    <div class="container" >
+    <center> 
+        <form action="https://www.camsmkce.in/index.aspx">
+
+        <div>
+              <label for="fname">Firstname:</label>
+        <input type="text" id="fname"placeholder="Enter your first Name" required>
+    
+        </div>
+        <br>
+
+       <div> <label for="lname">Lastname:</label>
+        <input type="text "id ="lname"placeholder="Enter you last Name" required>
+       </div>
+        <br>
+        <div><label for="email"> Email :</label>
+        <input type="text "id ="email" placeholder=" Enter your Emailid "required>
+
+        </div>
+        <br>
+        <div>
+            <label for ="pass">Password:</label>
+        <input type="password"id="pass" placeholder="Enter the password"  required minlength="8" maxlength="30" >
+        </div>
+        <br>
+        
+        <div class="r"></div><a href="https://www.camsmkce.in/index.aspx"><div><button type="submit" class="btn btn-outline-danger">Login</button></div></a>
+       <br>
+      <div class="t"></div> <div><button type="reset" class=" btn btn-outline-success">Reset</button></div>
+
+    </form>
+
+    </center>
+
+    </div>
+    </div>
+    <footer>
+        <a   href="contact.html" aria-placeholder="For contact">For contact </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>modal</title>
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      </script>
+
+<style>
+    .container{
+            background-color: rgba(0,0,0,0.7);
+        
+            margin-top: 100px;
+            color:wheat;
+            border: solid;
+            border-width: 10px;
+            border-radius: 100px;
+            border-color: black;
+            border-style: groove;
+            height: 350px;
+            padding: 30px;
+    }
+    
+
+</style>
+</head>
+<body style="background-image:url(login.jpg)">
+<center>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"style="margin-top:200px">
+    click
+  </button>
+</center>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"style="background-color:yellowgreen;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background:linear-gradient(45deg,blueviolet,lightgreen)">
+            <div class="container" >
+                <center>
+            
+                    <br>
+            
+                   <div> <label for="lname">Lastname:</label>
+                    <input type="text "id ="lname"placeholder="Enter you last Name" required>
+                   </div>
+                    <br>
+                    <div><label for="email"> Email :</label>
+                    <input type="text "id ="email" placeholder=" Enter your Emailid "required>
+            
+                    </div>
+                    <br>
+                    <div>
+                        <label for ="pass">Password:</label>
+                    <input type="password"id="pass" placeholder="Enter the password"  required minlength="8" maxlength="30" >
+                    </div>
+                         <br>
+                    
+                    <form name="myForm" action="https://www.camsmkce.in/index.aspx" onsubmit="return validateForm()" method="post">
+                      Name: <input type="text" name="fname">
+                      <input type="submit" value="Submit">
+                      </form>
+                                         <br>
+                  <div class="t"></div> <div><button type="reset" class=" btn btn-outline-success">Reset</button></div>
+            
+            
+                </center>
+            
+                </div>
+                </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

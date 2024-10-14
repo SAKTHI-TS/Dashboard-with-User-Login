@@ -1,0 +1,13 @@
+@import url(https://fonts.google.com/specimen/Poppins?query=pop);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.img{
+    background: url(superman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
